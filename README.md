@@ -1,7 +1,7 @@
 # blockchain-data-face-recognition
 
 Step 1: Training the model 
-For this you will need to add face data to the cognitive services . You will need to change the end point and the provided key the in code to run it on your systems . 
+For this you will need to add face data to the cognitive services . You will need to change the end point and the provided key the in code to run it on your systems . <  br />
 a.First run the file add_student.py , and add the details . Pictures will be clicked during this time .
 b.Then run the file create_person_group.py . this will create a person group , in our case it was test1 . 
 c.Now run create_person.py along with agrument like User78 ( which is created folder of face data in dataset folder) , to create a person the local as well as cloud database . You also be prompted to enter public key of the ganache blockchain systems at this stage .
