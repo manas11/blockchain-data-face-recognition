@@ -210,7 +210,7 @@ def getmedicines():
 		abi = json.loads('[{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"medicines","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"medicine","type":"string"}],"name":"addmedicines","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"_getmedicines","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"}]')
 		address=web3.toChecksumAddress("0x8Fe18Bf092473B98024166e7683ad3D9312DCB41")
 		contract = web3.eth.contract(address=address, abi=abi)
-		web3.eth.defaultAccount = web3.eth.accounts[1]
+		web3.eth.defaultAccount = publickey
 		medicines = contract.functions._getmedicines().call()
 
 		return jsonify({"medicines":medicines})
