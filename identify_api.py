@@ -213,7 +213,7 @@ def getmedicines():
 		web3.eth.defaultAccount = publickey
 		medicines = contract.functions._getmedicines().call()
 
-		return jsonify({"medicines":medicines})
+		return jsonify({"medicines":str(medicines)})
 
 
 
