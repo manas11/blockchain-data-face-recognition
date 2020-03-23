@@ -1,6 +1,6 @@
-# blockchain-data-face-recognition
+# PayBlocks - Data Storage and smart payments using Blockchain
 
-Step 1: Training the model 
+- Step 1: Training the model 
 For this you will need to add face data to the cognitive services . You will need to change the end point and the provided key the in code to run it on your systems ./
 a.First run the file add_student.py , and add the details . Pictures will be clicked during this time ./
 b.Then run the file create_person_group.py . this will create a person group , in our case it was test1 . 
@@ -10,7 +10,7 @@ e. Now run train.py to train the model .
 
 Now all the face data is fed to the API and model is train to identify 
 
-Step2 : 
+- Step2 : 
 
 
 For this step you need to have flask installed in your system as we will be creating Flask API for the android app .
@@ -19,7 +19,7 @@ a. Run identify_api.py to set up the API server .
 Also you need to host your localhost on web using Pagekite like platforms , as it will support our blockchain based platform . 
 
 
-Step3 :
+- Step3 :
 
 a.Next you need to run the apk in your mobile from anroid studio . 
 b. Now the person needs to click his/her picture to login .
